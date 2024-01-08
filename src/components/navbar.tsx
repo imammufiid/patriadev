@@ -126,10 +126,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
-            {/*<a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
-            </a>*/}
+            <a href="https://www.instagram.com/patria.developer" target="_blank">
+              <Button color="gray">Join with Us</Button>
+            </a>
           </div>
         </div>
       </Collapse>
