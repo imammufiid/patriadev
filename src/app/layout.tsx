@@ -1,7 +1,8 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import type {Metadata} from "next";
+import {Roboto} from "next/font/google";
+import {Layout, FixedPlugin} from "@/components";
+import React from "react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -10,34 +11,33 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Blog Posts Page",
+  title: "Patria Developer",
   description:
-    "Download Tailwind Blog Post Page, a free webpage template developed by Creative Tim. Based on Tailwind CSS and Material Tailwind, see the live demo on our site and elevate your blogging experience!",
+    "Patria Developer is a tech community from Blitar",
 };
 
 export default function RootLayout({
-  children,
-}: {
+                                     children,
+                                   }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-      </head>
-      <body className={roboto.className}>
-        <Layout>
-          {children}
-          <FixedPlugin />
-        </Layout>
-      </body>
+    <html lang="en" className='scroll-smooth' style={{scrollBehavior: 'smooth'}}>
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      />
+      <link rel="shortcut icon" href="/image/icons/light.png" type="image/png"/>
+    </head>
+    <body className={roboto.className}>
+    <Layout>
+      {children}
+    </Layout>
+    </body>
     </html>
   );
 }

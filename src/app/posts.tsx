@@ -14,69 +14,80 @@ import BlogPostCard from "@/components/blog-post-card";
 
 const POSTS = [
   {
-    img: `/image/blogs/blog2.svg`,
-    tag: "Enterprise",
-    title: "The key new features and changes in Tailwind CSS",
+    img: `/image/blogs/dummy/event7.jpeg`,
+    tag: "Remote Work",
+    title: "Starting a Career as a Remote Worker",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
     date: "10 September 2022",
     author: {
       img: `/image/avatar1.jpg`,
-      name: "Ryan Samuel",
+      name: "Mimin Ganteng",
     },
   },
   {
-    img: `/image/blogs/blog6.svg`,
-    tag: "Startups",
-    title: "Lyft launching cross-platform service this week",
+    img: `/image/blogs/dummy/event6.jpeg`,
+    tag: "Data",
+    title: "The Journey to Become a Core Banking Specialist",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
     date: "12 September 2022",
     author: {
       img: `/image/blogs/blog2.svg`,
-      name: "Nora Hazel",
+      name: "Mimin Ganteng",
     },
   },
   {
-    img: `/image/blogs/blog3.svg`,
-    tag: "Trending",
-    title: "6 insights into the French Fashion landscape",
+    img: `/image/blogs/dummy/event5.jpeg`,
+    tag: "Freelance",
+    title: "\"Fulltime x Freelance\" ft Kak Fays Co-founder TeamUp Agency",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
     date: "16 September 2022",
     author: {
       img: `/image/avatar2.jpg`,
-      name: "Otto Gonzalez",
+      name: "Mimin Ganteng",
     },
   },
   {
-    img: `/image/blogs/blog4.svg`,
-    tag: "Lifestyle",
-    title: "Autodesk looks to future of 3D printing with Project",
+    img: `/image/blogs/dummy/event1.jpeg`,
+    tag: "Mobile",
+    title: "Ngobrol santai Tentang Teknologi Android",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
     date: "18 September 2022",
     author: {
       img: `/image/avatar3.jpg`,
-      name: "Ryan Samuel",
+      name: "Mimin Ganteng",
     },
   },
   {
-    img: `/image/blogs/blog5.svg`,
-    tag: "Enterprise",
-    title: "Autodesk looks to future of 3D printing with Project",
+    img: `/image/blogs/dummy/event4.jpeg`,
+    tag: "Machine Learning",
+    title: "Let's Get to Know Machine Learning with AWS",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
-    date: "10 September 2022",
+    date: "18 September 2022",
     author: {
       img: `/image/avatar3.jpg`,
-      name: "Ryan Samuel",
+      name: "Mimin Ganteng",
     },
   },
   {
-    img: `/image/blogs/blog6.svg`,
-    tag: "Startups",
-    title: "Lyft launching cross-platform service this week",
+    img: `/image/blogs/dummy/event2.jpeg`,
+    tag: "Machine Learning",
+    title: "Implementasi Prinsip SOLID pada Pemrograman",
     desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
-    date: "12 September 2022",
+    date: "18 September 2022",
     author: {
-      img: `/image/avatar2.jpg`,
-      name: "Nora Hazel",
+      img: `/image/avatar3.jpg`,
+      name: "Mimin Ganteng",
+    },
+  },
+  {
+    img: `/image/blogs/dummy/event3.jpeg`,
+    tag: "Web",
+    title: "Become a Web Developer with PatriaDev x GresikDev",
+    desc: "Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens bed design but the back is too high for the beams and angle of the ceiling I also wanted to point out.",
+    date: "18 September 2022",
+    author: {
+      img: `/image/avatar3.jpg`,
+      name: "Mimin Ganteng",
     },
   },
 ];
@@ -87,31 +98,29 @@ export function Posts() {
       <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
         <div className="w-full flex mb-8 flex-col items-center">
           <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
-            <Tab value="trends">Trends</Tab>
+            <Tab value="trends">All</Tab>
             <Tab value="frontend">Frontend</Tab>
             <Tab value="backend">Backend</Tab>
-            <Tab value="cloud">Cloud</Tab>
-            <Tab value="ai">AI</Tab>
-            <Tab value="tools">Tools</Tab>
+            <Tab value="cloud">Mobile</Tab>
+            <Tab value="ai">UI/UX</Tab>
+            <Tab value="tools">Business</Tab>
           </TabsHeader>
         </div>
       </Tabs>
       <Typography variant="h6" className="mb-2">
-        Latest Blog Posts
+        Event Terbaru
       </Typography>
       <Typography variant="h1" className="mb-2">
-        Trends News
+        PatDev Events
       </Typography>
       <Typography
         variant="lead"
         color="gray"
         className="max-w-3xl mb-36 text-center text-gray-500"
       >
-        Check out what&apos;s new in the web development and tech worls! Do not
-        forget to subscribe to our blog and we will notify you with the latest
-        news.
+        Lihat dan ikuti event terbaru dari Patria Developer.
       </Typography>
-      <div className="container my-auto grid grid-cols-1 gap-x-8 gap-y-16 items-start lg:grid-cols-3">
+      <div className="container my-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
         {POSTS.map(({ img, tag, title, desc, date, author }) => (
           <BlogPostCard
             key={title}

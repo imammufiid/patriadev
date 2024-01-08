@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -9,24 +9,31 @@ import {
 import {
   RectangleStackIcon,
   UserCircleIcon,
-  CommandLineIcon,
   XMarkIcon,
-  Bars3Icon,
+  Bars3Icon, WindowIcon, UsersIcon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "About Us",
     icon: RectangleStackIcon,
+    href: "#",
   },
   {
-    name: "Account",
+    name: "Events",
     icon: UserCircleIcon,
+    href: '#order-articles'
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    name: "Blog",
+    icon: WindowIcon,
+    href: "#",
+  },
+  {
+    name: "Teams",
+    icon: UsersIcon,
+    href: "#",
   },
 ];
 
@@ -53,11 +60,11 @@ function NavItem({ children, href }: NavItemProps) {
 }
 
 export function Navbar() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpen(false)
@@ -65,29 +72,34 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
+          href="#"
           color="blue-gray"
           className="text-lg font-bold"
         >
-          Material Tailwind
+          PatriaDev
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
+            /*<NavItem key={name} href={href}>
               <Icon className="h-5 w-5" />
               {name}
-            </NavItem>
-          ))}
+            </NavItem>*/
+            <Link href={href ?? ''} key={name} className={"flex-row"} scroll={false}>
+              <div className="flex items-center space-x-2 text-black">
+                <Icon className="h-5 w-5 mr-2"/>
+                {name}
+              </div>
+            </Link>
+            ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+          {/*<Button color="gray">Join with us</Button>*/}
+          <a href="https://www.instagram.com/patria.developer" target="_blank">
+            <Button color="gray">Join with Us</Button>
           </a>
         </div>
         <IconButton
@@ -115,9 +127,9 @@ export function Navbar() {
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
             <Button variant="text">Sign In</Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            {/*<a href="https://www.material-tailwind.com/blocks" target="_blank">
               <Button color="gray">blocks</Button>
-            </a>
+            </a>*/}
           </div>
         </div>
       </Collapse>

@@ -6,13 +6,14 @@ import {
 } from "@material-tailwind/react";
 
 const CURRENT_YEAR = new Date().getFullYear();
-const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
+const LINKS = ["About Us", "Events", "Blogs", "Teams"];
 
 export function Footer() {
   return (
     <footer className="pb-5 p-10 md:pt-10">
       <div className="container flex flex-col mx-auto">
-        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 container max-w-6xl mx-auto rounded-2xl p-5 ">
+        <div
+          className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 container max-w-6xl mx-auto rounded-2xl p-5 ">
           <Typography
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
@@ -29,7 +30,7 @@ export function Footer() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
             <div className="w-80">
               {/* @ts-ignore */}
-              <Input label="Email" color="white" />
+              <Input label="Email" color="white"/>
             </div>
             <Button size="md" className="lg:w-32" fullWidth color="white">
               subscribe
@@ -44,7 +45,7 @@ export function Footer() {
             variant="h6"
             className="text-gray-900"
           >
-            Material Tailwind
+            PatriaDev
           </Typography>
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
@@ -63,16 +64,14 @@ export function Footer() {
           </ul>
           <div className="flex w-fit justify-center gap-2">
             <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-twitter text-lg" />
+              <a href={"https://www.youtube.com/@patriadeveloper5815"} target={"_blank"}><i className="fa-brands fa-youtube text-lg"/></a>
             </IconButton>
             <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-youtube text-lg" />
+              <a href={"https://www.instagram.com/patria.developer/"} target={"_blank"}><i
+                className="fa-brands fa-instagram text-lg"/></a>
             </IconButton>
             <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-instagram text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-github text-lg" />
+              <i className="fa-brands fa-github text-lg"/>
             </IconButton>
           </div>
         </div>
@@ -80,15 +79,14 @@ export function Footer() {
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Made with{" "}
+          &copy; {CURRENT_YEAR}{/* Made with{" "}
           <a href="https://www.material-tailwind.com" target="_blank">
             Material Tailwind
           </a>{" "}
           by{" "}
           <a href="https://www.creative-tim.com" target="_blank">
             Creative Tim
-          </a>
-          .
+          </a>*/}
         </Typography>
       </div>
     </footer>

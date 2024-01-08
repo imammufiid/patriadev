@@ -24,9 +24,9 @@ const ARTICLES = [
 
 export function Articles() {
   return (
-    <section className="container mx-auto px-8 py-20">
+    <section className="container mx-auto px-8 py-20" id={"order-articles"}>
       <Typography variant="h2" color="blue-gray">
-        Other Articles
+        Other Blogs
       </Typography>
       <Typography
         variant="lead"
