@@ -99,11 +99,9 @@ export function Posts() {
         <div className="w-full flex mb-8 flex-col items-center">
           <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
             <Tab value="trends">All</Tab>
-            <Tab value="frontend">Frontend</Tab>
-            <Tab value="backend">Backend</Tab>
+            <Tab value="frontend">Web</Tab>
             <Tab value="cloud">Mobile</Tab>
             <Tab value="ai">UI/UX</Tab>
-            <Tab value="tools">Business</Tab>
           </TabsHeader>
         </div>
       </Tabs>
