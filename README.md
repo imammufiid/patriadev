@@ -12,7 +12,7 @@ Phase 1
 - [x] Home page  
 - [x] About Us section in home page
 - [x] Events section in home page 
-- [ ] Banner section in home page  
+- [x] Banner section in home page  
 - [ ] Member section in home page  
 
 Phase 2
