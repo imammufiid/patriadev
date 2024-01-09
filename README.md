@@ -11,7 +11,6 @@ Patria Developer is a community from Blitar
 - [x] Home page  
 - [x] About Us section in home page
 - [x] Events section in home page 
-- [ ] Member section in home page 
 - [ ] Banner section in home page  
 - [ ] Member section in home page  
 - [ ] List all events page  
@@ -19,7 +18,6 @@ Patria Developer is a community from Blitar
 - [ ] List all members page
 - [ ] Member Detail page
 - [ ] Change to dynamic data instead of static data
-- [ ] Member Detail page
 
 **How to contribute?**
 
