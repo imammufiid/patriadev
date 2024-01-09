@@ -14,6 +14,7 @@ Phase 1
 - [x] Events section in home page 
 - [x] Banner section in home page  
 - [ ] Member section in home page  
+- [ ] Media partner section in home page
 
 Phase 2
 - [ ] List all events page  
