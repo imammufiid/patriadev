@@ -21,7 +21,7 @@ Patria Developer is a community from Blitar
 
 **How to contribute?**
 
-1. Fork this repo
+1. Clone this repo
 2. Created new branch* on your local computer
 3. Push request to the origin
 4. Other contributor will review your push request
