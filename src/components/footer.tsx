@@ -28,7 +28,7 @@ export function Footer() {
             about this.
           </Typography>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-            <div className="w-80">
+            <div className="md:w-80">
               {/* @ts-ignore */}
               <Input label="Email" color="white"/>
             </div>
@@ -64,7 +64,8 @@ export function Footer() {
           </ul>
           <div className="flex w-fit justify-center gap-2">
             <IconButton size="sm" color="gray" variant="text">
-              <a href={"https://www.youtube.com/@patriadeveloper5815"} target={"_blank"}><i className="fa-brands fa-youtube text-lg"/></a>
+              <a href={"https://www.youtube.com/@patriadeveloper5815"} target={"_blank"}><i
+                className="fa-brands fa-youtube text-lg"/></a>
             </IconButton>
             <IconButton size="sm" color="gray" variant="text">
               <a href={"https://www.instagram.com/patria.developer/"} target={"_blank"}><i
