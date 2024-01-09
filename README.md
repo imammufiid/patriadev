@@ -8,15 +8,20 @@ Patria Developer is a community from Blitar
 
 **Features List**
 
+Phase 1
 - [x] Home page  
 - [x] About Us section in home page
 - [x] Events section in home page 
 - [ ] Banner section in home page  
 - [ ] Member section in home page  
+
+Phase 2
 - [ ] List all events page  
 - [ ] Event Detail page  
 - [ ] List all members page
 - [ ] Member Detail page
+
+Phase 3
 - [ ] Change to dynamic data instead of static data
 
 **How to contribute?**
